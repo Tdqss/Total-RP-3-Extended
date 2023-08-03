@@ -19,15 +19,15 @@
 	limitations under the License.
 -->
 
-	<StatusBar name="TRP3_CastingBarFrame" toplevel="true" parent="UIParent" hidden="true" inherits="CastingBarFrameTemplate" frameStrata="HIGH">
+	<StatusBar name="TRP3_CastingBarFrame" toplevel="true" parent="UIParent" parentKey="ProgressionBar" hidden="true" inherits="CastingBarFrameTemplate" frameStrata="HIGH">
 		<Size x="195" y="13" />
 		<Anchors>
 			<Anchor point="BOTTOM" x="0" y="200" />
 		</Anchors>
 		<Scripts>
-			<OnLoad>
+			<!-- <OnLoad>
 				self:OnLoad(nil, false, false);
-			</OnLoad>
+			</OnLoad> -->
 			<OnEvent function="" />
 			<OnShow function="" />
 		</Scripts>

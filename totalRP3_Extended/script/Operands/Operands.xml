@@ -26,8 +26,8 @@
     <Script file="MiscellaneousOperands.lua"/>
     <Script file="AuraOperands.lua"/>
 
-    <!--@debug@-->
+    <!--@debug@
     <Include file="_tests\tests.xml" />
-    <!--@end-debug@-->
+    @end-debug@-->
 
 </Ui>

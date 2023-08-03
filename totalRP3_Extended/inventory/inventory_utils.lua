@@ -91,9 +91,9 @@ end
 
 local ITEM_COLORS = {
 	[Enum.ItemQuality.Poor] = TRP3_API.ItemQualityColors.Poor,
-	[Enum.ItemQuality.Common] = TRP3_API.ItemQualityColors.Common,
-	[Enum.ItemQuality.Uncommon] = TRP3_API.ItemQualityColors.Uncommon,
-	[Enum.ItemQuality.Rare] = TRP3_API.ItemQualityColors.Rare,
+	[Enum.ItemQuality.Standard] = TRP3_API.ItemQualityColors.Common,   -- these 2 are old style
+	[Enum.ItemQuality.Good] = TRP3_API.ItemQualityColors.Uncommon,
+	[Enum.ItemQuality.Rare] = TRP3_API.ItemQualityColors.Rare,         -- WTF this sill works?
 	[Enum.ItemQuality.Epic] = TRP3_API.ItemQualityColors.Epic,
 	[Enum.ItemQuality.Legendary] = TRP3_API.ItemQualityColors.Legendary,
 	[Enum.ItemQuality.Artifact] = TRP3_API.ItemQualityColors.Artifact,

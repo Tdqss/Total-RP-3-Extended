@@ -569,13 +569,13 @@ end
 Globals.extended_version = 1039;
 Globals.required_trp3_build = 115;
 
---@debug@
+--[==[@debug@
 Globals.extended_display_version = "v-dev";
---@end-debug@
+--@end-debug@]==]
 
---[===[@non-debug@
-Globals.extended_display_version = "@project-version@";
---@end-non-debug@]===]
+--@non-debug@
+Globals.extended_display_version = "2.0.1";
+--@end-non-debug@
 
 if TRP3_API.globals.version < Globals.required_trp3_build then
 	print(TRP3_API.Colors.Red([[

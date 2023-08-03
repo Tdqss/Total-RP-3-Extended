@@ -84,28 +84,28 @@
 		</Scripts>
 	</Frame>
 	
-	<CheckButton name="TRP3_AuraFrameCollapseAndExpandButton" mixin="CollapseAndExpandButtonMixin,TRP3_AuraFrameCollapseAndExpandButtonMixin">
+	<CheckButton name="TRP3_AuraFrameCollapseAndExpandButton" >
 		<Size x="15" y="30"/>
 		<Anchors>
 			<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeTo="TRP3_AuraBarFrame"/>
 		</Anchors>
-		<Scripts>
+		<!-- <Scripts>
 			<OnLoad method="OnLoad"/>
 			<OnClick method="OnClick"/>
-		</Scripts>
-		<NormalTexture parentKey="NormalTexture" atlas="bag-arrow" useAtlasSize="false">
+		</Scripts> -->
+		<NormalTexture parentKey="NormalTexture"  useAtlasSize="false">
 			<Size x="10" y="16"/>
 			<Anchors>
 				<Anchor point="CENTER"/>
 			</Anchors>
 		</NormalTexture>
-		<PushedTexture parentKey="PushedTexture" atlas="bag-arrow" useAtlasSize="false">
+		<PushedTexture parentKey="PushedTexture" useAtlasSize="false">
 			<Size x="10" y="16"/>
 			<Anchors>
 				<Anchor point="CENTER"/>
 			</Anchors>
 		</PushedTexture>
-		<HighlightTexture parentKey="HighlightTexture" atlas="bag-arrow" alpha=".4" alphaMode="ADD" useAtlasSize="false">
+		<HighlightTexture parentKey="HighlightTexture" alpha=".4" alphaMode="ADD" useAtlasSize="false">
 			<Size x="10" y="16"/>
 			<Anchors>
 				<Anchor point="CENTER"/>

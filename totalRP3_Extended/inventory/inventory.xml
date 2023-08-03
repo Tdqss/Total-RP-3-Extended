@@ -39,7 +39,7 @@
 
 		<Layers>
 			<Layer level="BACKGROUND">
-				<Texture parentKey="EmptySlot" inherits="Spellbook-EmptySlot">
+				<Texture file="Interface\Buttons\UI-EmptySlot">
 					<Anchors>
 						<Anchor point="CENTER"/>
 					</Anchors>
@@ -62,7 +62,7 @@
 				</Texture>
 			</Layer>
 			<Layer level="OVERLAY">
-				<Texture parentKey="ActiveTexture" inherits="Spellbook-SlotFrame">
+				<Texture file="Interface\\Buttons\\ButtonHilight-Square">
 					<Anchors>
 						<Anchor point="CENTER" x="1.5"/>
 					</Anchors>
