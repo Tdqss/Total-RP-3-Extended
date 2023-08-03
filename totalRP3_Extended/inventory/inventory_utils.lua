@@ -100,7 +100,7 @@ local ITEM_COLORS = {
 	[Enum.ItemQuality.Heirloom] = TRP3_API.ItemQualityColors.Heirloom,
 	[Enum.ItemQuality.WoWToken] = TRP3_API.ItemQualityColors.WoWToken,
 }
-local NEUTRAL_COLOR = ITEM_COLORS[Enum.ItemQuality.Common];
+local NEUTRAL_COLOR = ITEM_COLORS[Enum.ItemQuality.Standard];
 
 local function getQualityColorTab(quality)
 	---@type Color

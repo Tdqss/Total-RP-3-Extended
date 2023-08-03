@@ -30,7 +30,7 @@
 	<Include file="aura/aura.xml"/>
 	<Include file="list/list.xml"/>
 
-	<Frame name="TRP3_ToolFrame" inherits="TRP3_MainFrameTemplate" hidden="true" movable="true">
+	<Frame name="TRP3_ToolFrame" inherits="TRP3_MainFrameTemplate" mixin="TRP3_MainFrameMixin" hidden="true" movable="true">
 		<Anchors>
 			<Anchor point="CENTER" x="0" y="0"/>
 		</Anchors>

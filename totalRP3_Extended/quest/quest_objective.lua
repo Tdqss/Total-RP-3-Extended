@@ -174,17 +174,17 @@ function frame.init()
 
 	C_Timer.NewTicker(0.5, function()
 		frame:Hide();
-		if ObjectiveTrackerBlocksFrame:IsShown() then
-			local top = ObjectiveTrackerBlocksFrame.contentsHeight or 0;
-			if top > 0 then
-				top = top + 10
-			end
-			frame:SetPoint("TOPRIGHT", ObjectiveTrackerBlocksFrame, "TOPRIGHT", 0, -top);
-			frame:SetPoint("TOPLEFT", ObjectiveTrackerBlocksFrame, "TOPLEFT", 0, -top);
-			frame:SetWidth(ObjectiveTrackerBlocksFrame:GetWidth());
-			frame.Tracker:SetWidth(ObjectiveTrackerBlocksFrame:GetWidth());
-			display();
-			frame:Show();
-		end
+		-- if ObjectiveTrackerBlocksFrame:IsShown() then
+		-- 	local top = ObjectiveTrackerBlocksFrame.contentsHeight or 0;
+		-- 	if top > 0 then
+		-- 		top = top + 10
+		-- 	end
+		-- 	frame:SetPoint("TOPRIGHT", ObjectiveTrackerBlocksFrame, "TOPRIGHT", 0, -top);
+		-- 	frame:SetPoint("TOPLEFT", ObjectiveTrackerBlocksFrame, "TOPLEFT", 0, -top);
+		-- 	frame:SetWidth(ObjectiveTrackerBlocksFrame:GetWidth());
+		-- 	frame.Tracker:SetWidth(ObjectiveTrackerBlocksFrame:GetWidth());
+		-- 	display();
+		-- 	frame:Show();
+		-- end
 	end);
 end

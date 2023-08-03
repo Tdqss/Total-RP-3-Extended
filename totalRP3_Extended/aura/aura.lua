@@ -885,7 +885,7 @@ end
 TRP3_API.extended.auras.onStart = function()
 	TRP3_AuraBarFrame.text:SetText(loc.AURA_FRAME_TITLE);
 	TRP3_AuraBarFrame:UpdatePosition();
-	TRP3_AuraFrameCollapseAndExpandButton:UpdatePosition();
+	--TRP3_AuraFrameCollapseAndExpandButton:UpdatePosition();
 	TRP3_API.script.registerEffects(TRP3_API.extended.auras.EFFECTS);
 	auraCore:Initialize();
 end

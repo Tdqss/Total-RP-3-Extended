@@ -138,9 +138,9 @@ local function macro_init()
 		end
 	end)
 
-	hookLinkInsert("SpellFlyoutButton_OnClick", function(self)
-		return self.spellName
-	end)
+	-- hookLinkInsert("SpellFlyoutButton_OnClick", function(self)
+	-- 	return self.spellName
+	-- end)
 	hookLinkInsert("HandleModifiedItemClick", function(link)
 		return GetItemInfo(link)
 	end)
@@ -258,7 +258,7 @@ end
 
 local function companion_summon_mount_init()
 	local editor = TRP3_EffectEditorCompanion;
-	local GetMountInfoExtraByID, GetMountInfoByID = C_MountJournal.GetMountInfoExtraByID, C_MountJournal.GetMountInfoByID;
+	local GetMountInfoExtraByID, GetMountInfoByID = GetCompanionInfo, GetCompanionInfo;
 
 	local companionSelected = function(companionInfo)
 		editor.select.Icon:SetTexture(companionInfo[2]);
@@ -838,8 +838,8 @@ local function do_emote_init()
 	-- Build list of emotes
 	local spokenEmotes = tInvert(TextEmoteSpeechList);
 	-- Those two are added dynamically
-	spokenEmotes["FORTHEALLIANCE"] = true;
-	spokenEmotes["FORTHEHORDE"] = true;
+	--spokenEmotes["FORTHEALLIANCE"] = true;
+	--spokenEmotes["FORTHEHORDE"] = true;
 	local animatedEmotes = tInvert(EmoteList);
 	local otherEmotes = {}
 	for i = 1, LAST_EMOTE_ID do
@@ -856,7 +856,9 @@ local function do_emote_init()
 	end
 
 	local function getEmoteNameFromToken(emoteToken)
+		--print(emoteToken)
 		local emoteIndex = spokenEmotes[emoteToken] or animatedEmotes[emoteToken] or otherEmotes[emoteToken] or UNKNOWN
+		--print(emoteIndex)
 		return _G["EMOTE"..emoteIndex.."_CMD1"]
 	end
 

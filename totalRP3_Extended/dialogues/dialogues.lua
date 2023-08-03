@@ -532,12 +532,12 @@ function TRP3_API.extended.dialog.onStart()
 	end;
 
 	-- Choices
-	dialogFrame.Choice1.Num.Display:SetNumber(1);
-	dialogFrame.Choice2.Num.Display:SetNumber(2);
-	dialogFrame.Choice3.Num.Display:SetNumber(3);
-	dialogFrame.Choice4.Num.Display:SetNumber(4);
-	dialogFrame.Choice5.Num.Display:SetNumber(5);
-	dialogFrame.choices = { dialogFrame.Choice1, dialogFrame.Choice2, dialogFrame.Choice3, dialogFrame.Choice4, dialogFrame.Choice5 }
+	-- dialogFrame.Choice1.Num.Display:SetNumber(1);
+	-- dialogFrame.Choice2.Num.Display:SetNumber(2);
+	-- dialogFrame.Choice3.Num.Display:SetNumber(3);
+	-- dialogFrame.Choice4.Num.Display:SetNumber(4);
+	-- dialogFrame.Choice5.Num.Display:SetNumber(5);
+	-- dialogFrame.choices = { dialogFrame.Choice1, dialogFrame.Choice2, dialogFrame.Choice3, dialogFrame.Choice4, dialogFrame.Choice5 }
 
 	-- History
 	local function showHistory()
